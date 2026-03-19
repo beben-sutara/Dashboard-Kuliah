@@ -1,0 +1,390 @@
+Warning: TTY mode is not supported on Windows platform.
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Feature\ScheduleDisplayFormatTest[39m
+  [31;1mÔ¿»[39;22m[39m [2mbaak dashboard shows schedule columns with kode and sks[22m[39m
+  [32;1mÔ£ô[39;22m[39m [2mlive data returns kode and sks fields[22m[39m
+
+  [2m---[22m
+
+  [31;1mÔÇó Tests\Feature\ScheduleDisplayFormatTest [39;22m> [31;1mbaak dashboard shows schedule columns with kode and sks[39;22m
+[39;1m  Failed asserting that '<!DOCTYPE html>\r\n
+  [39;22m[39;1m<html lang="id" class="h-full">[39;22m[39;1m\r\n
+  [39;22m[39;1m<head>[39;22m[39;1m\r\n
+      [39;22m[39;1m<meta charset="UTF-8">[39;22m[39;1m\r\n
+      [39;22m[39;1m<meta name="viewport" content="width=device-width, initial-scale=1.0">[39;22m[39;1m\r\n
+      [39;22m[39;1m<meta name="csrf-token" content="EE5n8wYwrxlWKgOdoSi358GbVC4GLq8umVrQeiXI">[39;22m[39;1m\r\n
+      [39;22m[39;1m<title>[39;22m[39;1mDashboard ÔÇö JadwalKuliah[39;22m[39;1m</title>[39;22m[39;1m\r\n
+      [39;22m[39;1m<style>[39;22m[39;1m\r\n
+          body { font-family: 'Segoe UI', system-ui, sans-serif; }\r\n
+      [39;22m[39;1m</style>[39;22m[39;1m\r\n
+      [39;22m[39;1m<link rel="stylesheet" href="/css/app.css">[39;22m[39;1m\r\n
+  [39;22m[39;1m</head>[39;22m[39;1m\r\n
+  [39;22m[39;1m<body class="h-full bg-gray-50 font-sans antialiased">[39;22m[39;1m\r\n
+  [39;22m[39;1m<div class="flex h-screen overflow-hidden">[39;22m[39;1m\r\n
+  \r\n
+      \r\n
+      [39;22m[39;1m<aside class="w-60 flex-shrink-0 bg-emerald-900 text-white flex flex-col shadow-xl">[39;22m[39;1m\r\n
+          [39;22m[39;1m<div class="px-5 py-4 border-b border-emerald-700">[39;22m[39;1m\r\n
+              [39;22m[39;1m<span class="text-xl font-bold tracking-tight">[39;22m[39;1m­ƒÄô JadwalKuliah[39;22m[39;1m</span>[39;22m[39;1m\r\n
+              [39;22m[39;1m<p class="text-xs text-emerald-300 mt-0.5">[39;22m[39;1mPanel BAAK[39;22m[39;1m</p>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+          [39;22m[39;1m<nav class="flex-1 overflow-y-auto py-4 px-3 space-y-1 text-sm">[39;22m[39;1m\r\n
+              [39;22m[39;1m<a href="http://localhost/baak/dashboard"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition bg-emerald-600 text-white">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  Dashboard\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+  \r\n
+              [39;22m[39;1m<div class="pt-3 pb-1 px-3 text-xs font-semibold text-emerald-400 uppercase tracking-wider">[39;22m[39;1mMaster Data[39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+              [39;22m[39;1m<a href="http://localhost/baak/master/dosen"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition text-emerald-200 hover:bg-emerald-700">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  Data Dosen\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+              [39;22m[39;1m<a href="http://localhost/baak/master/ruangan"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition text-emerald-200 hover:bg-emerald-700">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  Data Ruangan\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+              [39;22m[39;1m<a href="http://localhost/baak/master/matakuliah"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition text-emerald-200 hover:bg-emerald-700">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  Mata Kuliah\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+  \r\n
+              [39;22m[39;1m<a href="http://localhost/baak/krs"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition text-emerald-200 hover:bg-emerald-700">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 014-4h8m-8 6v2m0-2h8m-8-6V9a4 4 0 014-4h4M5 7h.01M5 12h.01M5 17h.01"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  KRS Mahasiswa\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+  \r\n
+              [39;22m[39;1m<div class="pt-3 pb-1 px-3 text-xs font-semibold text-emerald-400 uppercase tracking-wider">[39;22m[39;1mMonitoring[39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+              [39;22m[39;1m<a href="http://localhost/baak/pengajuan-dosen"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition text-emerald-200 hover:bg-emerald-700">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h8m-8 4h5m-7 7h12a2 2 0 002-2V7a2 2 0 00-2-2h-3.586a1 1 0 01-.707-.293l-1.828-1.828A1 1 0 0011.172 2H6a2 2 0 00-2 2v15a2 2 0 002 2z"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  Pengajuan Dosen\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+  \r\n
+              [39;22m[39;1m<a href="http://localhost/live" target="_blank"\r\n
+                 class="flex items-center gap-3 px-3 py-2 rounded-lg transition text-emerald-200 hover:bg-emerald-700">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">[39;22m[39;1m<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>[39;22m[39;1m</svg>[39;22m[39;1m\r\n
+                  ­ƒô║ Papan Jadwal Live\r\n
+                  [39;22m[39;1m<span class="ml-auto text-xs bg-emerald-500 text-white px-1.5 py-0.5 rounded font-bold">[39;22m[39;1mLIVE[39;22m[39;1m</span>[39;22m[39;1m\r\n
+              [39;22m[39;1m</a>[39;22m[39;1m\r\n
+          [39;22m[39;1m</nav>[39;22m[39;1m\r\n
+  \r\n
+          [39;22m[39;1m<div class="px-3 py-3 border-t border-emerald-700 text-xs">[39;22m[39;1m\r\n
+              [39;22m[39;1m<p class="text-emerald-300 truncate">[39;22m[39;1mGerardo Emard[39;22m[39;1m</p>[39;22m[39;1m\r\n
+              [39;22m[39;1m<p class="text-emerald-400">[39;22m[39;1mBAAK Administrator[39;22m[39;1m</p>[39;22m[39;1m\r\n
+              [39;22m[39;1m<form method="POST" action="http://localhost/logout" class="mt-2">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<input type="hidden" name="_token" value="EE5n8wYwrxlWKgOdoSi358GbVC4GLq8umVrQeiXI">[39;22m[39;1m                [39;22m[39;1m<button type="submit" class="text-red-300 hover:text-red-100 transition">[39;22m[39;1mKeluar ÔåÆ[39;22m[39;1m</button>[39;22m[39;1m\r\n
+              [39;22m[39;1m</form>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+      [39;22m[39;1m</aside>[39;22m[39;1m\r\n
+  \r\n
+      \r\n
+      [39;22m[39;1m<main class="flex-1 overflow-y-auto">[39;22m[39;1m\r\n
+          \r\n
+          \r\n
+          [39;22m[39;1m<div class="p-5">[39;22m[39;1m\r\n
+  \r\n
+      \r\n
+      [39;22m[39;1m<div class="grid grid-cols-4 gap-4 mb-5">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl mb-1">[39;22m[39;1m­ƒôà[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl font-bold text-gray-800">[39;22m[39;1m1[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-xs text-gray-500">[39;22m[39;1mTotal Jadwal[39;22m[39;1m</div>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                  [39;22m[39;1m<div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl mb-1">[39;22m[39;1m­ƒæ¿ÔÇì­ƒÅ½[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl font-bold text-gray-800">[39;22m[39;1m1[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-xs text-gray-500">[39;22m[39;1mDosen Aktif[39;22m[39;1m</div>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                  [39;22m[39;1m<div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl mb-1">[39;22m[39;1m­ƒôÜ[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl font-bold text-gray-800">[39;22m[39;1m1[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-xs text-gray-500">[39;22m[39;1mMata Kuliah[39;22m[39;1m</div>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                  [39;22m[39;1m<div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl mb-1">[39;22m[39;1m­ƒÅ½[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-2xl font-bold text-gray-800">[39;22m[39;1m1[39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="text-xs text-gray-500">[39;22m[39;1mRuangan[39;22m[39;1m</div>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+      \r\n
+      \r\n
+      \r\n
+      [39;22m[39;1m<div class="flex gap-5 h-[calc(100vh-200px)]">[39;22m[39;1m\r\n
+  \r\n
+          \r\n
+          [39;22m[39;1m<div class="flex-1 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="px-4 py-3 border-b border-gray-100 flex items-center justify-between">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                      [39;22m[39;1m<h2 class="font-semibold text-gray-800">[39;22m[39;1m­ƒôï Input Jadwal Perkuliahan[39;22m[39;1m</h2>[39;22m[39;1m\r\n
+                      [39;22m[39;1m<p class="text-xs text-gray-500 mt-0.5">[39;22m[39;1mFormat tabel disamakan dengan papan Live Jadwal.[39;22m[39;1m</p>[39;22m[39;1m\r\n
+                  [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                  [39;22m[39;1m<span id="realtime-badge" class="text-xs text-green-600 flex items-center gap-1">[39;22m[39;1m\r\n
+                      [39;22m[39;1m<span class="w-2 h-2 bg-green-400 rounded-full animate-pulse inline-block">[39;22m[39;1m</span>[39;22m[39;1m Live\r\n
+                  [39;22m[39;1m</span>[39;22m[39;1m\r\n
+              [39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="overflow-auto flex-1">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<table class="w-full text-sm" id="jadwal-table">[39;22m[39;1m\r\n
+                      [39;22m[39;1m<thead class="sticky top-0 bg-gray-50 border-b border-gray-200">[39;22m[39;1m\r\n
+                          [39;22m[39;1m<tr>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mNO[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mSMT[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mHari[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mWaktu[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mRuangan[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mKode[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mMata Kuliah[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mSKS[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="text-left px-3 py-2 font-medium text-gray-600">[39;22m[39;1mDosen[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<th class="px-3 py-2 font-medium text-gray-600">[39;22m[39;1mAksi[39;22m[39;1m</th>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</tr>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</thead>[39;22m[39;1m\r\n
+                      [39;22m[39;1m<tbody id="jadwal-tbody" class="divide-y divide-gray-50">[39;22m[39;1m\r\n
+                                                  [39;22m[39;1m<tr data-id="1" class="hover:bg-gray-50 transition">[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-500 text-xs">[39;22m[39;1m1[39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-600 text-xs">[39;22m[39;1m1[39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2">[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<span class="inline-block px-2 py-0.5 rounded-full text-xs font-medium\r\n
+                                      bg-blue-100 text-blue-700">[39;22m[39;1mSenin[39;22m[39;1m</span>[39;22m[39;1m\r\n
+                              [39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-600 text-xs">[39;22m[39;1m\r\n
+                                  08:00 ÔÇô\r\n
+                                  10:00\r\n
+                              [39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-600 text-xs">[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<span class="font-medium">[39;22m[39;1mLAB01[39;22m[39;1m</span>[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<span class="block text-gray-400">[39;22m[39;1mLab 01[39;22m[39;1m</span>[39;22m[39;1m\r\n
+                              [39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 font-mono text-xs text-gray-600">[39;22m[39;1mIF101[39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-800 text-xs">[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<span class="block font-medium">[39;22m[39;1mAlgoritma &amp; Pemrograman[39;22m[39;1m</span>[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<span class="text-gray-400">[39;22m[39;1mTeknik Informatika[39;22m[39;1m</span>[39;22m[39;1m\r\n
+                              [39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-600 text-xs">[39;22m[39;1m3[39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-gray-600 text-xs">[39;22m[39;1mDosen BAAK[39;22m[39;1m</td>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<td class="px-3 py-2 text-center">[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<div class="flex gap-1 justify-center">[39;22m[39;1m\r\n
+                                      [39;22m[39;1m<button onclick="editJadwal(1, {&quot;id&quot;:1,&quot;dosen_id&quot;:1,&quot;matakuliah_id&quot;:1,&quot;ruangan_id&quot;:1,&quot;prodi&quot;:&quot;Teknik Informatika&quot;,&quot;semester&quot;:&quot;1&quot;,&quot;hari&quot;:&quot;Senin&quot;,&quot;waktu_mulai&quot;:&quot;08:00:00&quot;,&quot;waktu_selesai&quot;:&quot;10:00:00&quot;,&quot;created_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;,&quot;updated_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;,&quot;dosen&quot;:{&quot;id&quot;:1,&quot;user_id&quot;:null,&quot;nidn&quot;:&quot;D-401&quot;,&quot;nama&quot;:&quot;Dosen BAAK&quot;,&quot;prodi&quot;:&quot;Teknik Informatika&quot;,&quot;created_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;,&quot;updated_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;},&quot;matakuliah&quot;:{&quot;id&quot;:1,&quot;kode&quot;:&quot;IF101&quot;,&quot;nama&quot;:&quot;Algoritma &amp; Pemrograman&quot;,&quot;sks&quot;:3,&quot;created_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;,&quot;updated_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;},&quot;ruangan&quot;:{&quot;id&quot;:1,&quot;kode&quot;:&quot;LAB01&quot;,&quot;nama&quot;:&quot;Lab 01&quot;,&quot;kapasitas&quot;:30,&quot;jenis&quot;:&quot;Lab&quot;,&quot;created_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;,&quot;updated_at&quot;:&quot;2026-03-19T08:10:37.000000Z&quot;}})"\r\n
+                                          class="text-xs px-2 py-1 bg-amber-50 hover:bg-amber-100 text-amber-700 rounded transition">[39;22m[39;1mEdit[39;22m[39;1m</button>[39;22m[39;1m\r\n
+                                      [39;22m[39;1m<form method="POST" action="http://localhost/baak/jadwal/1" onsubmit="return confirm('Hapus jadwal ini?')">[39;22m[39;1m\r\n
+                                          [39;22m[39;1m<input type="hidden" name="_token" value="EE5n8wYwrxlWKgOdoSi358GbVC4GLq8umVrQeiXI">[39;22m[39;1m [39;22m[39;1m<input type="hidden" name="_method" value="DELETE">[39;22m[39;1m                                        [39;22m[39;1m<button type="submit" class="text-xs px-2 py-1 bg-red-50 hover:bg-red-100 text-red-700 rounded transition">[39;22m[39;1mHapus[39;22m[39;1m</button>[39;22m[39;1m\r\n
+                                      [39;22m[39;1m</form>[39;22m[39;1m\r\n
+                                  [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m</td>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</tr>[39;22m[39;1m\r\n
+                                              [39;22m[39;1m</tbody>[39;22m[39;1m\r\n
+                  [39;22m[39;1m</table>[39;22m[39;1m\r\n
+              [39;22m[39;1m</div>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+          \r\n
+          [39;22m[39;1m<div class="w-96 flex-shrink-0 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="px-4 py-3 border-b border-gray-100">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<h2 id="form-title" class="font-semibold text-gray-800">[39;22m[39;1mÔ×ò Input Jadwal BAAK[39;22m[39;1m</h2>[39;22m[39;1m\r\n
+              [39;22m[39;1m</div>[39;22m[39;1m\r\n
+              [39;22m[39;1m<div class="overflow-y-auto flex-1 p-4">[39;22m[39;1m\r\n
+                  [39;22m[39;1m<form id="jadwal-form" method="POST" action="http://localhost/baak/jadwal" class="space-y-3">[39;22m[39;1m\r\n
+                      [39;22m[39;1m<input type="hidden" name="_token" value="EE5n8wYwrxlWKgOdoSi358GbVC4GLq8umVrQeiXI">[39;22m[39;1m                    [39;22m[39;1m<input type="hidden" name="_method" id="form-method" value="POST">[39;22m[39;1m\r\n
+                      [39;22m[39;1m<input type="hidden" name="jadwal_id" id="form-jadwal-id">[39;22m[39;1m\r\n
+  \r\n
+                      \r\n
+                      [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mMata Kuliah[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<select name="matakuliah_id" id="matakuliah-select" class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<option value="">[39;22m[39;1mÔÇö pilih ÔÇö[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="1"\r\n
+                                  data-kode="IF101"\r\n
+                                  data-sks="3"\r\n
+                                  >[39;22m[39;1m\r\n
+                                  IF101 ÔÇö Algoritma &amp; Pemrograman (3 SKS)\r\n
+                              [39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                      [39;22m[39;1m</select>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div class="grid grid-cols-2 gap-2">[39;22m[39;1m\r\n
+                          [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mKode[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<input type="text" id="matakuliah-kode-preview"\r\n
+                                  class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm bg-gray-50 text-gray-600 focus:outline-none"\r\n
+                                  placeholder="Otomatis dari master MK" readonly>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mSKS[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<input type="text" id="matakuliah-sks-preview"\r\n
+                                  class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm bg-gray-50 text-gray-600 focus:outline-none"\r\n
+                                  placeholder="Otomatis dari master MK" readonly>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mDosen[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<select name="dosen_id" class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<option value="">[39;22m[39;1mÔÇö pilih ÔÇö[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="1" >[39;22m[39;1mDosen BAAK[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                      [39;22m[39;1m</select>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div class="grid grid-cols-2 gap-2">[39;22m[39;1m\r\n
+                          [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mProdi[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<input type="text" name="prodi" value=""\r\n
+                                  class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none"\r\n
+                                  list="prodi-list" required>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<datalist id="prodi-list">[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<option>[39;22m[39;1mTeknik Informatika[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<option>[39;22m[39;1mSistem Informasi[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<option>[39;22m[39;1mMatematika[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                  [39;22m[39;1m<option>[39;22m[39;1mManajemen[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                              [39;22m[39;1m</datalist>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mSMT[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<input type="text" name="semester" value="1"\r\n
+                                  class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mHari[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<select name="hari" class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="Senin" >[39;22m[39;1mSenin[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="Selasa" >[39;22m[39;1mSelasa[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="Rabu" >[39;22m[39;1mRabu[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="Kamis" >[39;22m[39;1mKamis[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="Jumat" >[39;22m[39;1mJumat[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="Sabtu" >[39;22m[39;1mSabtu[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                      [39;22m[39;1m</select>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mRuangan[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<select name="ruangan_id" class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<option value="">[39;22m[39;1mÔÇö pilih ÔÇö[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                          [39;22m[39;1m<option value="1" >[39;22m[39;1mLAB01 ÔÇö Lab 01[39;22m[39;1m</option>[39;22m[39;1m\r\n
+                                                      [39;22m[39;1m</select>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div class="grid grid-cols-2 gap-2">[39;22m[39;1m\r\n
+                          [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mMulai[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<input type="time" name="waktu_mulai" value="08:00"\r\n
+                                  class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<div>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<label class="text-xs font-medium text-gray-700">[39;22m[39;1mSelesai[39;22m[39;1m</label>[39;22m[39;1m\r\n
+                              [39;22m[39;1m<input type="time" name="waktu_selesai" value="10:30"\r\n
+                                  class="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" required>[39;22m[39;1m\r\n
+                          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+                      [39;22m[39;1m<div class="flex gap-2 pt-2">[39;22m[39;1m\r\n
+                          [39;22m[39;1m<button type="submit"\r\n
+                              class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium py-2 rounded-lg transition">[39;22m[39;1m\r\n
+                              ­ƒÆ¥ Simpan\r\n
+                          [39;22m[39;1m</button>[39;22m[39;1m\r\n
+                          [39;22m[39;1m<button type="button" id="btn-cancel" onclick="resetForm()" class="hidden px-3 py-2 text-sm text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg transition">[39;22m[39;1m\r\n
+                              Batal\r\n
+                          [39;22m[39;1m</button>[39;22m[39;1m\r\n
+                      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+                  [39;22m[39;1m</form>[39;22m[39;1m\r\n
+              [39;22m[39;1m</div>[39;22m[39;1m\r\n
+          [39;22m[39;1m</div>[39;22m[39;1m\r\n
+      [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  [39;22m[39;1m</div>[39;22m[39;1m\r\n
+      [39;22m[39;1m</main>[39;22m[39;1m\r\n
+  [39;22m[39;1m</div>[39;22m[39;1m\r\n
+  \r\n
+  [39;22m[39;1m<script src="/js/app.js">[39;22m[39;1m</script>[39;22m[39;1m\r\n
+  [39;22m[39;1m<script>[39;22m[39;1m\r\n
+  const formEl = document.getElementById('jadwal-form');\r\n
+  const methodEl = document.getElementById('form-method');\r\n
+  const jadwalIdEl = document.getElementById('form-jadwal-id');\r\n
+  const formTitle = document.getElementById('form-title');\r\n
+  const btnCancel = document.getElementById('btn-cancel');\r\n
+  const matakuliahSelect = document.getElementById('matakuliah-select');\r\n
+  const matakuliahKodePreview = document.getElementById('matakuliah-kode-preview');\r\n
+  const matakuliahSksPreview = document.getElementById('matakuliah-sks-preview');\r\n
+  \r\n
+  function syncMatakuliahMeta(value) {\r\n
+      const option = matakuliahSelect.querySelector(`option[value="${value}"]`);\r\n
+  \r\n
+      matakuliahKodePreview.value = option?.dataset.kode || '';\r\n
+      matakuliahSksPreview.value = option?.dataset.sks || '';\r\n
+  }\r\n
+  \r\n
+  function editJadwal(id, data) {\r\n
+      formTitle.textContent = 'Ô£Å´©Å Edit Jadwal';\r\n
+      methodEl.value = 'PUT';\r\n
+      jadwalIdEl.value = id;\r\n
+      formEl.action = `/baak/jadwal/${id}`;\r\n
+      btnCancel.classList.remove('hidden');\r\n
+  \r\n
+      formEl.querySelector('[name=matakuliah_id]').value = data.matakuliah_id;\r\n
+      formEl.querySelector('[name=dosen_id]').value = data.dosen_id;\r\n
+      formEl.querySelector('[name=ruangan_id]').value = data.ruangan_id;\r\n
+      formEl.querySelector('[name=prodi]').value = data.prodi;\r\n
+      formEl.querySelector('[name=semester]').value = data.semester;\r\n
+      formEl.querySelector('[name=hari]').value = data.hari;\r\n
+      formEl.querySelector('[name=waktu_mulai]').value = data.waktu_mulai.substring(0,5);\r\n
+      formEl.querySelector('[name=waktu_selesai]').value = data.waktu_selesai.substring(0,5);\r\n
+      syncMatakuliahMeta(String(data.matakuliah_id));\r\n
+      formEl.scrollIntoView({ behavior: 'smooth' });\r\n
+  }\r\n
+  \r\n
+  function resetForm() {\r\n
+      formTitle.textContent = 'Ô×ò Input Jadwal BAAK';\r\n
+      methodEl.value = 'POST';\r\n
+      formEl.action = 'http://localhost/baak/jadwal';\r\n
+      formEl.reset();\r\n
+      btnCancel.classList.add('hidden');\r\n
+      syncMatakuliahMeta(matakuliahSelect.value);\r\n
+  }\r\n
+  \r\n
+  matakuliahSelect.addEventListener('change', (event) => {\r\n
+      syncMatakuliahMeta(event.target.value);\r\n
+  });\r\n
+  \r\n
+  syncMatakuliahMeta(matakuliahSelect.value);\r\n
+  \r\n
+  // Real-time Echo listener\r\n
+  if (window.Echo) {\r\n
+      window.Echo.channel('jadwal')\r\n
+          .listen('.JadwalCreated', (e) => { location.reload(); })\r\n
+          .listen('.JadwalUpdated', (e) => { location.reload(); })\r\n
+          .listen('.JadwalDeleted', (e) => {\r\n
+              const row = document.querySelector(`tr[data-id="${e.jadwal_id}"]`);\r\n
+              if (row) row.remove();\r\n
+          });\r\n
+  }\r\n
+  [39;22m[39;1m</script>[39;22m[39;1m\r\n
+  [39;22m[39;1m</body>[39;22m[39;1m\r\n
+  [39;22m[39;1m</html>[39;22m[39;1m\r\n
+  ' contains "KODE".[39;22m
+
+  at [32mG:\Aplikasi\DashboardJadwalKuliah\tests\Feature\ScheduleDisplayFormatTest.php[39m:[32m51[39m
+     47Ôûò 
+     48Ôûò         $response = $this->actingAs($user)->get(route('baak.dashboard'));
+     49Ôûò 
+     50Ôûò         $response->assertOk();
+  Ô×£  51Ôûò         $response->assertSee('KODE');
+     52Ôûò         $response->assertSee('SKS');
+     53Ôûò         $response->assertSee('IF101');
+     54Ôûò         $response->assertSee('Algoritma & Pemrograman');
+     55Ôûò     }
+
+  [33m1   [39m[39;1mG:\Aplikasi\DashboardJadwalKuliah\vendor\phpunit\phpunit\phpunit[39;22m:[39;1m107[39;22m
+  [90m    PHPUnit\TextUI\Command::main()[39m
+
+
+  [37;1mTests:  [39;22m[31;1m1 failed[39;22m[39m, [39m[32;1m1 passed[39;22m
+  [37;1mTime:   [39;22m[39m1.35s[39m
+
+
