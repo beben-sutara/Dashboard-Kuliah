@@ -32,6 +32,7 @@ class PortalController extends Controller
 
         $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan'])
             ->forDosen($masterDosen->id)
+            ->forSemesterAktif()
             ->orderedWeekly()
             ->get();
 

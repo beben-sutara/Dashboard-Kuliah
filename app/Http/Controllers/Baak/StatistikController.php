@@ -10,13 +10,17 @@ use App\Models\MasterRuangan;
 use App\Models\MasterMatakuliah;
 use App\Models\MasterKelas;
 use App\Models\KrsMahasiswa;
+use App\Models\SemesterAkademik;
 use Carbon\Carbon;
 
 class StatistikController extends Controller
 {
     public function index()
     {
-        $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])->get();
+        $semesterAktif = SemesterAkademik::aktif();
+        $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+            ->forSemesterAktif()
+            ->get();
 
         // ── Summary cards ──
         $summary = (object) [

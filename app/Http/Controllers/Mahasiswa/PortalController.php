@@ -7,6 +7,7 @@ use App\Models\JadwalPerkuliahan;
 use App\Models\KrsMahasiswa;
 use App\Models\LaporanKehadiran;
 use App\Models\Mahasiswa;
+use App\Models\SemesterAkademik;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -49,6 +50,7 @@ class PortalController extends Controller
             $mataKuliahAktif = collect();
             $semesterAktif   = collect();
             $jadwalTersedia  = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                ->forSemesterAktif()
                 ->orderedWeekly()
                 ->get();
         }
@@ -433,9 +435,15 @@ class PortalController extends Controller
         ]);
     }
 
-    /** Compute the current academic period string (e.g. "Ganjil 2025/2026"). */
+    /** Get the active semester name from SemesterAkademik, with fallback. */
     private function semesterAkademikAktif(): string
     {
+        $aktif = SemesterAkademik::aktif();
+        if ($aktif) {
+            return $aktif->nama;
+        }
+
+        // Fallback: compute from current date
         $month = (int) date('n');
         $year  = (int) date('Y');
         return $month >= 8

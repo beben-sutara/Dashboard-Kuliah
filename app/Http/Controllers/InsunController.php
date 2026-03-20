@@ -81,6 +81,7 @@ class InsunController extends Controller
 
             if (strlen($keyword) >= 2) {
                 $query = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                    ->forSemesterAktif()
                     ->whereHas('dosen', fn($q) => $q->where('nama', 'like', "%{$keyword}%"));
 
                 if ($filterHari) {
@@ -131,6 +132,7 @@ class InsunController extends Controller
 
             if (strlen($keyword) >= 2) {
                 $query = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                    ->forSemesterAktif()
                     ->whereHas('matakuliah', fn($q) => $q->where('nama', 'like', "%{$keyword}%")->orWhere('kode', 'like', "%{$keyword}%"));
 
                 if ($filterHari) {
@@ -166,6 +168,7 @@ class InsunController extends Controller
         // Jadwal hari ini
         if (str_contains($msg, 'jadwal hari ini') || str_contains($msg, 'hari ini') || str_contains($msg, 'jadwal sekarang')) {
             $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                ->forSemesterAktif()
                 ->forHari($hariIni)
                 ->orderedWeekly()
                 ->get();
@@ -196,6 +199,7 @@ class InsunController extends Controller
         // Kelas yang sedang berlangsung
         if (str_contains($msg, 'berlangsung') || str_contains($msg, 'sedang') || str_contains($msg, 'sekarang aktif')) {
             $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                ->forSemesterAktif()
                 ->forHari($hariIni)
                 ->get()
                 ->filter(fn($j) => $j->isAktif());
@@ -220,6 +224,7 @@ class InsunController extends Controller
         // Ruangan kosong
         if (str_contains($msg, 'ruangan kosong') || str_contains($msg, 'ruang kosong') || str_contains($msg, 'ruangan tersedia')) {
             $ruanganTerpakai = JadwalPerkuliahan::forHari($hariIni)
+                ->forSemesterAktif()
                 ->get()
                 ->filter(fn($j) => $j->isAktif())
                 ->pluck('ruangan_id')
@@ -245,6 +250,7 @@ class InsunController extends Controller
         if (str_contains($msg, 'besok')) {
             $hariBesok = $this->hariIndonesia($now->copy()->addDay());
             $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                ->forSemesterAktif()
                 ->forHari($hariBesok)
                 ->orderedWeekly()
                 ->get();
@@ -270,6 +276,7 @@ class InsunController extends Controller
             if (str_contains($msg, $h)) {
                 $hariCari = ucfirst($h);
                 $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+                    ->forSemesterAktif()
                     ->forHari($hariCari)
                     ->orderedWeekly()
                     ->get();

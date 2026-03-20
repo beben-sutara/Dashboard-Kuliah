@@ -17,7 +17,8 @@ class JadwalPerkuliahan extends Model
 
     protected $fillable = [
         'dosen_id', 'matakuliah_id', 'ruangan_id', 'kelas_id',
-        'prodi', 'semester', 'hari', 'waktu_mulai', 'waktu_selesai'
+        'prodi', 'semester', 'hari', 'waktu_mulai', 'waktu_selesai',
+        'semester_akademik_id',
     ];
 
     public function dosen()
@@ -38,6 +39,11 @@ class JadwalPerkuliahan extends Model
     public function kelas()
     {
         return $this->belongsTo(MasterKelas::class, 'kelas_id');
+    }
+
+    public function semesterAkademik()
+    {
+        return $this->belongsTo(SemesterAkademik::class, 'semester_akademik_id');
     }
 
     public function laporanKehadiran()
@@ -82,6 +88,15 @@ class JadwalPerkuliahan extends Model
     public function scopeForHari(Builder $query, string $hari): Builder
     {
         return $query->where($query->getModel()->qualifyColumn('hari'), $hari);
+    }
+
+    public function scopeForSemesterAktif(Builder $query): Builder
+    {
+        $aktifId = SemesterAkademik::aktifId();
+        if ($aktifId) {
+            return $query->where($query->getModel()->qualifyColumn('semester_akademik_id'), $aktifId);
+        }
+        return $query;
     }
 
     public function scopeOrderedWeekly(Builder $query): Builder

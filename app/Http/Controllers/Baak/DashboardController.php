@@ -8,13 +8,17 @@ use App\Models\MasterDosen;
 use App\Models\MasterKelas;
 use App\Models\MasterMatakuliah;
 use App\Models\MasterRuangan;
+use App\Models\SemesterAkademik;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+        $semesterAktif = SemesterAkademik::aktif();
+
+        $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas', 'semesterAkademik'])
+            ->forSemesterAktif()
             ->orderedWeekly()
             ->get();
 
@@ -29,12 +33,12 @@ class DashboardController extends Controller
         $ruangan = MasterRuangan::orderBy('kode')->get();
 
         $stats = [
-            'jadwal' => JadwalPerkuliahan::count(),
+            'jadwal' => $jadwal->count(),
             'dosen' => MasterDosen::count(),
             'matakuliah' => MasterMatakuliah::count(),
             'ruangan' => MasterRuangan::count(),
         ];
 
-        return view('baak.dashboard', compact('jadwal', 'dosen', 'matakuliah', 'kelas', 'ruangan', 'stats'));
+        return view('baak.dashboard', compact('jadwal', 'dosen', 'matakuliah', 'kelas', 'ruangan', 'stats', 'semesterAktif'));
     }
 }

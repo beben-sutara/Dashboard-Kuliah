@@ -11,6 +11,7 @@ use App\Models\MasterDosen;
 use App\Models\MasterKelas;
 use App\Models\MasterMatakuliah;
 use App\Models\MasterRuangan;
+use App\Models\SemesterAkademik;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -113,6 +114,9 @@ class JadwalController extends Controller
         $validated['semester'] = MasterKelas::query()
             ->whereKey($validated['kelas_id'])
             ->value('semester');
+
+        // Auto-assign active semester
+        $validated['semester_akademik_id'] = SemesterAkademik::aktifId();
 
         return $validated;
     }

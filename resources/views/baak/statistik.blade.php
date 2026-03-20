@@ -41,55 +41,55 @@
 </div>
 
 {{-- ── Charts Row 1: Jadwal per Hari + Prodi ─────────────────── --}}
-<div class="px-6 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
+<div class="px-6 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-4">
     {{-- Bar Chart: Distribusi Jadwal per Hari --}}
-    <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-        <h3 class="font-semibold text-gray-700 mb-3">📅 Distribusi Jadwal per Hari</h3>
-        <canvas id="chartHari" height="200"></canvas>
+    <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+        <h3 class="font-semibold text-gray-700 text-sm mb-2">📅 Distribusi Jadwal per Hari</h3>
+        <div style="height: 180px"><canvas id="chartHari"></canvas></div>
     </div>
 
     {{-- Pie Chart: Distribusi per Prodi --}}
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-        <h3 class="font-semibold text-gray-700 mb-3">🎓 Distribusi per Program Studi</h3>
-        <canvas id="chartProdi" height="200"></canvas>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+        <h3 class="font-semibold text-gray-700 text-sm mb-2">🎓 Distribusi per Program Studi</h3>
+        <div style="height: 180px"><canvas id="chartProdi"></canvas></div>
     </div>
 </div>
 
 {{-- ── Charts Row 2: Beban Dosen + Ruangan ────────────────────── --}}
-<div class="px-6 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
+<div class="px-6 pt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
     {{-- Horizontal Bar: Beban Mengajar Dosen --}}
-    <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-        <h3 class="font-semibold text-gray-700 mb-3">👨‍🏫 Top 10 Beban Mengajar Dosen</h3>
-        <canvas id="chartDosen" height="250"></canvas>
+    <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+        <h3 class="font-semibold text-gray-700 text-sm mb-2">👨‍🏫 Top 10 Beban Mengajar Dosen</h3>
+        <div style="height: 200px"><canvas id="chartDosen"></canvas></div>
     </div>
 
     {{-- Doughnut: Utilisasi Ruangan --}}
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-        <h3 class="font-semibold text-gray-700 mb-3">🏫 Utilisasi Ruangan</h3>
-        <canvas id="chartRuangan" height="200"></canvas>
-        <div class="mt-3 text-center text-sm text-gray-500">
-            <span class="inline-block w-3 h-3 rounded-full bg-emerald-500 mr-1"></span> Terpakai ({{ $ruanganTerpakai }})
-            <span class="inline-block w-3 h-3 rounded-full bg-gray-300 ml-3 mr-1"></span> Kosong ({{ $ruanganKosong }})
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+        <h3 class="font-semibold text-gray-700 text-sm mb-2">🏫 Utilisasi Ruangan</h3>
+        <div style="height: 160px"><canvas id="chartRuangan"></canvas></div>
+        <div class="mt-2 text-center text-xs text-gray-500">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 mr-1"></span> Terpakai ({{ $ruanganTerpakai }})
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-gray-300 ml-3 mr-1"></span> Kosong ({{ $ruanganKosong }})
         </div>
     </div>
 </div>
 
 {{-- ── Charts Row 3: SKS + Laporan ────────────────────────────── --}}
-<div class="px-6 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
+<div class="px-6 pt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
     {{-- Distribusi SKS --}}
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-        <h3 class="font-semibold text-gray-700 mb-3">📚 Distribusi SKS</h3>
-        <canvas id="chartSks" height="200"></canvas>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+        <h3 class="font-semibold text-gray-700 text-sm mb-2">📚 Distribusi SKS</h3>
+        <div style="height: 170px"><canvas id="chartSks"></canvas></div>
     </div>
 
     {{-- Laporan Kehadiran --}}
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-        <h3 class="font-semibold text-gray-700 mb-3">📋 Status Laporan Kehadiran</h3>
-        <canvas id="chartLaporan" height="200"></canvas>
-        <div class="mt-3 flex justify-center gap-4 text-xs text-gray-500">
-            <span><span class="inline-block w-3 h-3 rounded-full bg-yellow-400 mr-1"></span>Pending ({{ $laporanStats->pending }})</span>
-            <span><span class="inline-block w-3 h-3 rounded-full bg-green-500 mr-1"></span>Valid ({{ $laporanStats->valid }})</span>
-            <span><span class="inline-block w-3 h-3 rounded-full bg-red-400 mr-1"></span>Ditolak ({{ $laporanStats->ditolak }})</span>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+        <h3 class="font-semibold text-gray-700 text-sm mb-2">📋 Status Laporan Kehadiran</h3>
+        <div style="height: 150px"><canvas id="chartLaporan"></canvas></div>
+        <div class="mt-2 flex justify-center gap-3 text-xs text-gray-500">
+            <span><span class="inline-block w-2.5 h-2.5 rounded-full bg-yellow-400 mr-1"></span>Pending ({{ $laporanStats->pending }})</span>
+            <span><span class="inline-block w-2.5 h-2.5 rounded-full bg-green-500 mr-1"></span>Valid ({{ $laporanStats->valid }})</span>
+            <span><span class="inline-block w-2.5 h-2.5 rounded-full bg-red-400 mr-1"></span>Ditolak ({{ $laporanStats->ditolak }})</span>
         </div>
     </div>
 
@@ -217,9 +217,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: { legend: { display: false } },
             scales: {
-                y: { beginAtZero: true, ticks: { stepSize: 1 } }
+                y: { beginAtZero: true, ticks: { stepSize: 1, font: { size: 10 } } },
+                x: { ticks: { font: { size: 10 } } }
             }
         }
     });
@@ -239,8 +241,9 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
-                legend: { position: 'bottom', labels: { font: { size: 11 }, boxWidth: 12 } }
+                legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 10, padding: 8 } }
             }
         }
     });
@@ -250,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
     new Chart(document.getElementById('chartDosen'), {
         type: 'bar',
         data: {
-            labels: dosenData.map(d => d.nama.length > 25 ? d.nama.substring(0, 25) + '...' : d.nama),
+            labels: dosenData.map(d => d.nama.length > 20 ? d.nama.substring(0, 20) + '...' : d.nama),
             datasets: [
                 {
                     label: 'Jumlah Sesi',
@@ -269,11 +272,13 @@ document.addEventListener('DOMContentLoaded', function() {
         options: {
             indexAxis: 'y',
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
-                legend: { position: 'top', labels: { font: { size: 11 }, boxWidth: 12 } }
+                legend: { position: 'top', labels: { font: { size: 10 }, boxWidth: 10 } }
             },
             scales: {
-                x: { beginAtZero: true, ticks: { stepSize: 1 } }
+                x: { beginAtZero: true, ticks: { stepSize: 1, font: { size: 10 } } },
+                y: { ticks: { font: { size: 10 } } }
             }
         }
     });
@@ -292,6 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             cutout: '65%',
             plugins: {
                 legend: { display: false }
@@ -313,8 +319,9 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
-                legend: { position: 'bottom', labels: { font: { size: 11 }, boxWidth: 12 } }
+                legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 10, padding: 8 } }
             }
         }
     });
@@ -333,6 +340,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             cutout: '60%',
             plugins: { legend: { display: false } }
         }

@@ -19,6 +19,7 @@ class KrsMahasiswaController extends Controller
 
         $mahasiswa = Mahasiswa::orderBy('nama')->get();
         $jadwal = JadwalPerkuliahan::with(['matakuliah', 'dosen', 'ruangan'])
+            ->forSemesterAktif()
             ->orderedWeekly()
             ->get();
 

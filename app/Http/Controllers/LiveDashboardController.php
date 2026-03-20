@@ -47,6 +47,7 @@ class LiveDashboardController extends Controller
         $hariIni = $this->hariMap[$now->format('l')] ?? '';
 
         $jadwal = JadwalPerkuliahan::with(['dosen', 'matakuliah', 'ruangan', 'kelas'])
+            ->forSemesterAktif()
             ->forHari($hariIni)
             ->orderBy('waktu_mulai')
             ->get()

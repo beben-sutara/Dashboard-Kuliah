@@ -11,6 +11,7 @@ use App\Http\Controllers\Baak\MasterKelasController;
 use App\Http\Controllers\Baak\KrsMahasiswaController;
 use App\Http\Controllers\Baak\PengajuanJadwalDosenController as BaakPengajuanJadwalDosenController;
 use App\Http\Controllers\Baak\StatistikController;
+use App\Http\Controllers\Baak\SemesterController;
 use App\Http\Controllers\Dosen\PortalController as DosenPortal;
 use App\Http\Controllers\Dosen\PengajuanJadwalController as DosenPengajuanJadwalController;
 use App\Http\Controllers\Mahasiswa\PortalController as MahasiswaPortal;
@@ -70,6 +71,12 @@ Route::middleware(['auth', 'role:baak'])->prefix('baak')->name('baak.')->group(f
     Route::delete('/krs/{krsMahasiswa}', [KrsMahasiswaController::class, 'destroy'])->name('krs.destroy');
 
     Route::get('/statistik', [StatistikController::class, 'index'])->name('statistik');
+
+    Route::get('/semester', [SemesterController::class, 'index'])->name('semester.index');
+    Route::post('/semester', [SemesterController::class, 'store'])->name('semester.store');
+    Route::put('/semester/{semester}', [SemesterController::class, 'update'])->name('semester.update');
+    Route::patch('/semester/{semester}/set-aktif', [SemesterController::class, 'setAktif'])->name('semester.set-aktif');
+    Route::delete('/semester/{semester}', [SemesterController::class, 'destroy'])->name('semester.destroy');
 
     Route::get('/pengajuan-dosen', [BaakPengajuanJadwalDosenController::class, 'index'])->name('pengajuan-dosen.index');
     Route::patch('/pengajuan-dosen/{pengajuanJadwalDosen}', [BaakPengajuanJadwalDosenController::class, 'update'])->name('pengajuan-dosen.update');

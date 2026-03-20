@@ -1,6 +1,25 @@
 <x-baak-layout title="Dashboard">
 <div class="p-5">
 
+    {{-- Semester Aktif Banner --}}
+    @if($semesterAktif)
+    <div class="mb-4 bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-2.5 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-sm">
+            <span class="text-emerald-600 font-bold">📅 Semester Aktif:</span>
+            <span class="text-emerald-800 font-semibold">{{ $semesterAktif->nama }}</span>
+            @if($semesterAktif->tanggal_mulai && $semesterAktif->tanggal_selesai)
+                <span class="text-emerald-500 text-xs">({{ $semesterAktif->tanggal_mulai->format('d M Y') }} — {{ $semesterAktif->tanggal_selesai->format('d M Y') }})</span>
+            @endif
+        </div>
+        <a href="{{ route('baak.semester.index') }}" class="text-xs text-emerald-600 hover:text-emerald-800 underline">Kelola</a>
+    </div>
+    @else
+    <div class="mb-4 bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2.5 flex items-center justify-between">
+        <span class="text-sm text-yellow-700">⚠️ Belum ada semester aktif — Menampilkan semua jadwal</span>
+        <a href="{{ route('baak.semester.index') }}" class="text-xs text-yellow-700 hover:text-yellow-900 underline font-semibold">Set Semester →</a>
+    </div>
+    @endif
+
     {{-- Stats Bar --}}
     <div class="grid grid-cols-4 gap-4 mb-5">
         @foreach([
@@ -122,6 +141,21 @@
                         </ul>
                     </div>
                     @endif
+
+                    {{-- Semester Akademik Aktif --}}
+                    <div>
+                        <label class="text-xs font-medium text-gray-700">Semester Akademik</label>
+                        @if($semesterAktif)
+                            <div class="mt-1 w-full border border-emerald-200 bg-emerald-50 rounded-lg px-3 py-2 text-sm flex items-center justify-between">
+                                <span class="text-emerald-700 font-semibold">📅 {{ $semesterAktif->nama }}</span>
+                                <span class="text-xs bg-emerald-500 text-white px-1.5 py-0.5 rounded-full">AKTIF</span>
+                            </div>
+                        @else
+                            <div class="mt-1 w-full border border-yellow-200 bg-yellow-50 rounded-lg px-3 py-2 text-sm text-yellow-700">
+                                ⚠️ Belum ada semester aktif — <a href="{{ route('baak.semester.index') }}" class="underline font-semibold">Set di sini</a>
+                            </div>
+                        @endif
+                    </div>
 
                     <div>
                         <label class="text-xs font-medium text-gray-700">Mata Kuliah</label>
